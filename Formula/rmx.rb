@@ -1,11 +1,9 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://docs.brew.sh/rubydoc/Formula
 class Rmx < Formula
   desc "Extended rm command"
   homepage "https://codeberg.org/cordor/rmx"
   url "https://codeberg.org/cordor/rmx/archive/v0.2.1.tar.gz"
   sha256 "040fba2ab4fbed88956f06e9a6f784ec6de174481cc222840f90d78e1b072597"
-  license "GNU GPLv3"
+  license "GPL-3.0-or-later"
 
   depends_on "rust" => :build
 
@@ -23,9 +21,9 @@ class Rmx < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system bin/"program", "do", "something"`.
-    system "touch", testpath/"test.txt"
-    assert_predicate testpath/"test.txt", :exist?
+    touch testpath/"test.txt"
+    assert_path_exists testpath/"test.txt"
     system "#{bin}/rmx", testpath/"test.txt"
-    refute_predicate testpath/"test.txt", :exist?
+    refute_path_exists testpath/"test.txt"
   end
 end
