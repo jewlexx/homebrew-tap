@@ -1,8 +1,8 @@
 class Rmx < Formula
   desc "Extended rm command"
   homepage "https://codeberg.org/cordor/rmx"
-  url "https://codeberg.org/cordor/rmx/archive/v0.2.1.tar.gz"
-  sha256 "040fba2ab4fbed88956f06e9a6f784ec6de174481cc222840f90d78e1b072597"
+  url "https://codeberg.org/cordor/rmx/archive/v0.2.2.tar.gz"
+  sha256 "25f2a86b5af770059ab7f1af74b0a693e380d4f7f08cd2729864593728eb4c0b"
   license "GPL-3.0-or-later"
 
   depends_on "rust" => :build
