@@ -1,8 +1,8 @@
 class Dirkill < Formula
   desc "Fast, reliable and interactive directory deletion tool"
   homepage "https://github.com/jewlexx/dirkill"
-  url "https://github.com/jewlexx/dirkill/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "2df343e9462011343acbd6443a90ce79e1ddc4e423c6027fc526ccbad07a8619"
+  url "https://github.com/jewlexx/dirkill/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "e5096f9e550a9281ce790379f81b9806f71e9b4104ebfd117a0bda6b43f8bccb"
   license "Apache-2.0"
 
   bottle do
