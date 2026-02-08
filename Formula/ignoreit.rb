@@ -5,6 +5,12 @@ class Ignoreit < Formula
   sha256 "d35bf50294bce2feddf2e2d8c63ea9a80e2958f7975dce324e8b5f00eaa31af0"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/jewlexx/homebrew-tap/releases/download/ignoreit-3.0.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "bb8267f82ae0352a0f920c1c1a0869a138f20e1368710ac08a7f0fe68fa1d877"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "935dd021d4f23c4f17c9c187a8af1cbdc62b14c90b6716b9b0ff94461e92fbb6"
+  end
+
   depends_on "rust" => :build
   depends_on "sqlx-cli" => :build
 
