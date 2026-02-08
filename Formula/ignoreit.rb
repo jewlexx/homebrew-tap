@@ -9,7 +9,7 @@ class Ignoreit < Formula
   depends_on "sqlx-cli" => :build
 
   def install
-    ENV['DATABASE_URL'] = 'sqlite:gitignores.db'
+    ENV["DATABASE_URL"] = "sqlite:gitignores.db"
     system "sqlx", "database", "create"
     system "sqlx", "migrate", "run"
     system "cargo", "install", *std_cargo_args
